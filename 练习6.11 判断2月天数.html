@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习6.11</title>
+    <script type="text/javascript">
+    var year = prompt('请输入年份');
+    function isRunYear() {
+      if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ) {
+        alert(year + '年的2月份有29天');
+      } else {
+        alert(year + '年的2月份有28天');
+      }
+    }
+    isRunYear(year);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

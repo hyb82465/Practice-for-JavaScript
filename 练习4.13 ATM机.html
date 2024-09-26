@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习4.12</title>
+    <script type="text/javascript">
+      var sum = 100; //初始存放100块钱
+      var operation;
+      while (operation != 4) {
+        operation = prompt('请输入您要的操作：'+ '\n' +'1.存钱'+ '\n' +'2.取钱'+ '\n' +'3.显示余额'+ '\n' +'4.退出');
+          if (operation == 1) {
+            var save = prompt('请您输入存的钱数');
+            sum += parseFloat(save);
+            alert('您现在的钱数是：' + sum);
+          }else if (operation == 2){
+            var draw = prompt('请您输入取的钱数');
+            if (sum >= draw) {
+              sum -= parseFloat(draw);
+              alert('您现在的钱数是：' + sum);
+            }else {
+              alert('操作失败，您的余额不足');
+              alert('您当前的余额为：' + sum);
+            }
+          }else if (operation == 3){
+            alert('您现在的钱数是：' + sum);
+          }else if (operation == 4){
+            alert('您正在退出！');
+          }
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

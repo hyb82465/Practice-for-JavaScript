@@ -1,0 +1,30 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习8.5</title>
+    <script type="text/javascript">
+    var computer = {
+      color: 'black',
+      weight: '1.1kg',
+      type: 'macbookAir',
+      watchingMovie: function() {
+        console.log('watching');
+      },
+      listeningMusic: function() {
+        console.log('listening');
+      },
+      playingGame: function() {
+        console.log('playing');
+      },
+      coding: function() {
+        console.log('coding');
+      }
+    }
+    for (var k in computer) {
+      console.log(k);
+      console.log(computer[k]);
+    }
+    </script>
+  </head>
+  <body>

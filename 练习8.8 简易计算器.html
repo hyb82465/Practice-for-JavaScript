@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习8.8</title>
+    <script type="text/javascript">
+    var feature = prompt('欢迎使用简易计算器：' + '\n' + '1.加法运算' + '\n' + '2.减法运算' +' \n' + '3.乘法运算' + '\n' + '4.除法运算' + '\n' + '5.退出' + '\n' + '请输入您的选项：');
+    if (feature == 5) {
+      alert('您正在退出');
+    }else if(feature == 1 || feature == 2 || feature == 3 || feature == 4) {
+      var num1 = prompt('请输入第一位数');
+      var num2 = prompt('请输入第二位数');
+      getResult(num1,num2);
+    }
+    function getResult(numb1,numb2) {
+      if (feature == 1) {
+        var result = parseFloat(numb1) + parseFloat(numb2);
+      }else if (feature == 2) {
+        var result = parseFloat(numb1) - parseFloat(num2);
+      }else if (feature == 3) {
+        var result = parseFloat(numb1) * parseFloat(numb2);
+      }else if (feature == 4) {
+        var result = parseFloat(numb1) / parseFloat(numb2);
+      }
+      alert(result);
+    }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

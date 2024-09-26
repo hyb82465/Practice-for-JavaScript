@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习9.2</title>
+    <script type="text/javascript">
+    function getRandom(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var random = getRandom(1, 50);
+    for (i = 1; i <= 5; i++){
+      var n = 6 - i;
+      var num = prompt('你来猜？输入1～50之间的一个整数' + '\n' + '你还有' + n + '次机会');
+      if (num > random) {
+        alert('你猜大了');
+      } else if (num < random) {
+        alert('你猜小了');
+      } else if (num == random){
+        alert('恭喜你猜对了');
+        break;
+      }
+    }
+    if (num != random) {
+      alert('你失败了');
+    }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

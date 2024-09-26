@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习4.4</title>
+    <script type="text/javascript">
+      var num = prompt('请输入班级总人数');
+      var sum = 0;
+      var average;
+      for (i=1; i<=num; i++) {
+        var score = prompt('请输入第'+i+'个学生的成绩');
+        sum += parseFloat(score);
+      }
+      average = sum/num;
+      alert('班级总成绩是' + sum);
+      alert('班级平均成绩是' + average);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

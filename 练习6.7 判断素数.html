@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习6.7</title>
+    <script type="text/javascript">
+    var num = prompt('请输入一个大于等于2的整数');
+    var flag = true;
+    function judgePrime(num){
+      for (i = 2; i < num; i++) {
+        if (num % i == 0){
+          flag = false;
+        }
+      }
+      if (flag == true) {
+        alert('这个数是质数');
+      }else {
+        alert('这个数是合数');
+      }
+    }
+    judgePrime(num);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

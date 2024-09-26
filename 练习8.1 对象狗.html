@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习8.1</title>
+    <script type="text/javascript">
+    var dog = {
+      name: '可可',
+      type: '阿拉斯加犬',
+      age: 5,
+      color: '棕红色',
+      bark: function() {
+        console.log('bark');
+      },
+      showFilm: function() {
+        console.log('showFilm');
+      }
+      }
+      console.log(dog.name);
+      console.log(dog.age);
+      dog.bark();
+      dog.showFilm();
+      for (var k in dog) {
+        console.log(k);
+        console.log(dog[k]);
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

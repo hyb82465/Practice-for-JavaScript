@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>练习8.3</title>
+    <script type="text/javascript">
+    function Character(name, type, blood, attack) {
+      this.name = name;
+      this.type = type;
+      this.blood = blood;
+      this.attack = function() {
+        console.log(attack);
+      }
+    }
+    var lp = new Character('廉颇','力量型','500血量','近战');
+    var hy = new Character('后裔','射手型','100血量','远程');
+    console.log(lp.name);
+    lp.attack();
+    console.log(hy.name);
+    hy.attack();
+    </script>
+  </head>
+  <body>
